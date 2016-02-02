@@ -95,10 +95,24 @@ input {
   float: right;
 }
 
+body {
+  background-image: url(../images/background1.jpg);
+  background-size: 100% auto;
+  width: 100vw;
+  height: 100vh;
+
+}
+
 .container {
-  max-width: 960px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  /*max-width: 960px;*/
+  max-width: 800px;
+  min-width: 700px;
   width: 100%;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .row {
@@ -107,13 +121,13 @@ input {
   /*border: 1px solid #888;*/
 }
 
-.container:first-child {
+.container>div:nth-child(1) {
   height: 160px;
 }
 
 .container>.row:nth-child(2) {
   height: 70px;
-  line-height: 70px;
+  line-height: 69px;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -204,7 +218,7 @@ input {
 
 .sume {
   color: #aaa;
-  /*font-weight: bold;*/
+  font-weight: bold;
   font-size: 18px;
   font-family: 'Work Sans';
   height: 100px;
@@ -213,4 +227,65 @@ input {
 
 .small_ammounts {
   height: 100px;
+}
+
+.container>div:nth-child(5)>div:nth-child(2)>form>input {
+  position: relative;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+  background-color: #86C46D;
+  border-radius: 7px;
+  width: 55%;
+  color: #fff;
+  font-size: 25px;
+}
+
+.container>div:nth-child(5)>div {
+  height: 100%;
+}
+
+.container>div:nth-child(5) {
+  height: 120px;
+}
+
+.pay_now {
+  height: 100%;
+}
+
+.pay_now>input {
+  cursor: pointer;
+}
+
+.remember_me {
+  height: 15%;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 4%;
+}
+
+.remember_me>input {
+  vertical-align: middle;
+  display: inline-block;
+  height: 13px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.remember_me>span {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 15px;
+  color: #888;
+  text-indent: 1px;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.remember_me img {
+  cursor: pointer;
+  width: 11px;
+  height: auto;
+
 }
