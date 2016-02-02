@@ -1,0 +1,216 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+@font-face {
+  font-family: Thebold;
+  src: url("../fonts/theboldfont.ttf");
+}
+
+div, input {
+  box-sizing: border-box;
+}
+
+input {
+  border: 0;
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  text-indent: 20px;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+.col-15 {
+  width: 15%;
+}
+
+.col-85 {
+  width: 85%;
+}
+
+.col-80 {
+  width: 80%;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.col-33 {
+  width: 33.3333%;
+}
+
+/*BORDERS*/
+
+.topborder {
+  border-top: 1px solid #888;
+}
+
+.rightborder {
+  border-right: 1px solid #888;
+}
+
+.bottomborder {
+  border-bottom: 1px solid #888;
+}
+
+.leftborder {
+  border-left: 1px solid #888;
+}
+
+
+*:focus {
+  outline:none;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  box-sizing: border-box;
+  height: 100%;
+  /*border: 1px solid #888;*/
+}
+
+.container:first-child {
+  height: 160px;
+}
+
+.container>.row:nth-child(2) {
+  height: 70px;
+  line-height: 70px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.container .row:nth-child(4) {
+  height: 300px;
+  text-align: center;
+}
+
+.container>form>.row {
+  height: 70px;
+  line-height: 65px;
+  font-size: 21px;
+  text-align: left;
+  /*padding-left: 20px;*/
+  color: #aaa;
+}
+
+.profile_icon {
+  display: inline-block;
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+  background-image: url(../images/pinkman.jpg);
+  background-size: 100% auto;
+}
+
+.description {
+  font-family: 'Work Sans';
+  height: 100px;
+  margin: 30px 0 0;
+  padding: 10px 0;
+}
+
+.description span {
+  display: block;
+}
+
+.description :nth-child(1) {
+  font-size: 33px;
+  font-weight: 500;
+  color: #777;
+  line-height: 40px;
+}
+
+.description :nth-child(2) {
+  font-size: 22px;
+  font-weight: 400;
+  color: #aaa;
+  line-height: 30px;
+}
+
+.payment {
+  color: #fff;
+  background-color: #C3B7D6;
+}
+
+.billing {
+  color: #777;
+}
+
+.gender {
+  text-align: center;
+  line-height: 70px;
+}
+
+.total_ammount {
+  font-family: 'Work Sans';
+  font-size: 70px;
+  font-weight: bold;
+  color: #777;
+  height: 300px;
+  line-height: 300px;
+}
+
+.right_ammounts {
+  height: 300px;
+}
+
+.right_ammounts>.sume:nth-child(2)>.small_ammounts:nth-child(2) {
+  background-color: #F2EEC2;
+  color: #777;
+  border-bottom: 1px solid #888;
+}
+
+.sume {
+  color: #aaa;
+  /*font-weight: bold;*/
+  font-size: 18px;
+  font-family: 'Work Sans';
+  height: 100px;
+  line-height: 100px;
+}
+
+.small_ammounts {
+  height: 100px;
+}
